@@ -1,19 +1,54 @@
-<header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+<header class="site-header">
+  <div class="logo">
+    <a href="../index.html" class="logo-link">
+      <img src="../img/logo.svg" loading="lazy" alt="logo" class="logo-img" />
+      <p class="logo-text">Cinemania</p>
+    </a>
   </div>
+  <nav class="nav-bar">
+    <ul class="nav-list">
+      <li class="nav-list__item">
+        <a href="../index.html" class="nav-link">HOME</a>
+      </li>
+      <li class="nav-list__item">
+        <a href="../catalog.html" class="nav-link">CATALOG</a>
+      </li>
+      <li class="nav-list__item">
+        <a href="../myLibrary.html" class="nav-link">MY LIBRARY</a>
+      </li>
+    </ul>
+  </nav>
+  <button type="button" class="header__menu-button" data-menu-open>MENU</button>
+  <div class="header__theme-switcher" id="theme-switcher">
+    <svg id="icon-moon">
+      <use href="../img/night-mode.svg"></use>
+    </svg>
+    <svg id="icon-sun">
+      <use href="../img/sunMod.svg"></use>
+    </svg>
+    <svg id="icon-ball">
+      <use href="../img/balll.svg"></use>
+    </svg>
+  </div>
+  <div class="mobile-menu__container" id="mobile-menu__container" data-menu>
+    <a href="../index.html" class="logo-link mobile-menu__logo">
+      <img
+        loading="lazy"
+        src="../img/logo.svg"
+        alt="logo"
+        class="mobile-menu__logo-img"
+    /></a>
+    <ul class="nav-list">
+      <li class="nav-list__item">
+        <a href="../index.html">HOME</a>
+      </li>
+      <li class="nav-list__item">
+        <a href="../catalog.html">CATALOG</a>
+      </li>
+      <li class="nav-list__item">
+        <a href="../library.html">MY LIBRARY</a>
+      </li>
+    </ul>
+  </div>
+  <div class="backdrop visually-hidden" data-backdrop></div>
 </header>
