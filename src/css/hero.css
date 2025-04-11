@@ -1,0 +1,242 @@
+.modal {
+    display: none;
+    z-index: 1;
+    position: absolute; /* Modalın sabit pozisyonda olmasını sağlar, ekran kaydırılsa bile ortada kalır */
+    left: 50%; /* Ekranın ortasına yerleştirir */
+    top: 50%; /* Ekranın ortasına yerleştirir */
+    transform: translate(-50%, -50%); /* Modalı hem yatay hem de dikey ortalar */
+    width: 80%; /* Modalın genişliğini ayarlayın */
+    max-width: 600px; /* Maksimum genişlik sınırı */
+    background-color: rgba(0, 0, 0, 0.4); /* Yarı şeffaf arka plan */
+  }
+  /* Modal içerik stili */
+  .modal-content {
+    width: 280px;
+    height: auto;
+    background-color: #111111;
+    border-radius: 16px;
+    box-shadow: 1px 1px 14px 4px #ff6b086b;
+  }
+  .hero-modal-movie-poster {
+    width: 248px;
+    border-radius: 5px;
+    margin-bottom: 22px;
+    margin-left: 16px;
+  }
+  .hero-modal-info {
+    margin-left: 16px;
+  }
+  .hero-modal-info h2 {
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 29px;
+  }
+  .hero-modal-info p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #B7B7B7;
+    margin-bottom: 12px;
+  }
+  /* Kapatma butonu stili */
+  .close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+  }
+  .close-btn:hover,
+  .close-btn:focus {
+    color: black;
+    text-decoration: none;
+  }
+  #trailerIframe {
+    width: 270px;
+    height: 240px;
+    border: none;
+  }
+  .hero-container {
+    position: relative;
+    background: linear-gradient(
+      86.47deg,
+      #111111 33.63%,
+      rgba(17, 17, 17, 0) 76.86%
+    );
+    background-size: cover; /* Resmin tam ekranı kaplamasını sağlar */
+    background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+    background-position: center; /* Resmi ortalar */
+    padding: 20px;
+    object-fit: cover;
+    padding-bottom: 130px;
+    margin-bottom: 50px;
+  }
+  .hero-content h1 {
+    padding-top: 40px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #FFFFFF;
+  }
+  .overview {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+    /* font-size: 14px; */
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #F8F8F8;
+    padding-right: 123px; /* Sağ taraftan 123px boşluk bırakır */
+  }
+  .star {
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+  .trailer {
+    width: 117px;
+    height: 38px;
+    border-radius: 74px;
+    gap: 8px;
+    padding: 10px;
+    position: relative;
+    background: linear-gradient(141.22deg, #FFC226 9.4%, #F84119 91.91%);
+    border: 0px;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .detail {
+    width: 117px;
+    height: 38px;
+    border-radius: 74px;
+    margin-left: 8px;
+    padding: 10px;
+    position: relative;
+    background: none;
+    border: 1px solid #F8F8F8;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .close-btn {
+    margin-right: 15px;
+  }
+  .hero-content-default {
+    background-image: url("../img/heroMobile.jpg");
+    font-family: "Roboto", sans-serif;
+    margin-left: 20px;
+  }
+  .hero-content-default h1 {
+    font-weight: 700;
+    font-size: 32px;
+    width: 199px;
+  }
+  .hero-content-default p {
+    font-weight: 400;
+    font-size: 14px;
+    width: 166px;
+  }
+  .started {
+    width: 110px;
+    height: 38px;
+    background: linear-gradient(141.22deg, #FFC226 9.4%, #F84119 91.91%);
+    color: #111111;
+    border-radius: 74px;
+    border: 0px;
+  }
+  @media (min-width: 768px) {
+    .hero-content-default {
+      /* background-image: url("../img/HeroTablet.jpg"); */
+      margin-left: 32px;
+    }
+    .hero-content-default h1 {
+      width: 332px;
+      font-size: 44px;
+      margin-bottom: 8px;
+    }
+    .hero-content-default p {
+      width: 357px;
+      margin-bottom: 32px;
+    }
+    .started {
+      width: 120px;
+      height: 40px;
+    }
+    .trailer {
+      width: 128px;
+      height: 40px;
+      font-size: 14px;
+    }
+    .detail {
+      width: 128px;
+      height: 40px;
+      margin-left: 8px;
+      font-size: 14px;
+    }
+    .hero-content h1 {
+      font-size: 44px;
+    }
+    .modal {
+      position: absolute;
+      top: 40%;
+      left: 40%;
+    }
+    .modal-content {
+      width: 704px;
+      height: auto;
+      padding: 16px 16px 16px 50px;
+    }
+    #trailerIframe {
+      width: 680px;
+      height: 340px;
+    }
+    .modal-body {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+    }
+    .hero-modal-movie-poster {
+      width: 294px;
+      height: 400px;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+    .hero-modal-info p {
+      width: 300px;
+    }
+  }
+  @media (min-width: 1280px) {
+    .modal-content {
+      width: 846px;
+    }
+    .hero-modal-movie-poster {
+      width: 375px;
+      height: 478px;
+      margin-left: 30px;
+      /* margin-right: 20px; */
+    }
+    .modal {
+      position: absolute;
+      top: 60%;
+      left: 35%;
+    }
+    #trailerIframe {
+      width: 820px;
+      height: 500px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
