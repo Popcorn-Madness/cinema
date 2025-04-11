@@ -1,0 +1,189 @@
+.search-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  align-items: center;
+  margin-left: 60px;
+}
+select,
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+button {
+  background-color: orange;
+  cursor: pointer;
+}
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+.movie {
+  background-color: #222;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.movie img {
+  width: 100%;
+  border-radius: 8px;
+}
+.movie h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+.movie p {
+  font-size: 13px;
+  color: #ccc;
+}
+#genre-select {
+  background-color: transparent;
+  color: #b7b7b7;
+  border: 1px solid #ffc226;
+  font-size: 16px;
+  width: 224px;
+  height: 40px;
+  border-radius: 8px;
+}
+#year-select {
+  background-color: transparent;
+  color: #b7b7b7;
+  border: 1px solid #ffffff;
+  font-size: 16px;
+  width: 95px;
+  height: 48px;
+}
+#year-select {
+  display: none;
+}
+.stars {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 4px;
+  width: 14px;
+  height: 14px;
+}
+.checked {
+  color: #f87719;
+}
+.no-results {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  font-size: 20px;
+  color: White;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-right: 60px;
+}
+.pagination-button {
+  margin: 0 5px;
+  padding: 10px 15px; /* Yükseklik ve genişliği ayarlayarak yuvarlaklık sağlanır */
+  background-color: transparent;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 50%; /* Tam yuvarlaklık için 50% kullanılır */
+  width: 40px; /* Butonun genişliği */
+  height: 40px; /* Butonun yüksekliği */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b7b7b7;
+}
+.pagination-button:hover {
+  background-color: #ddd;
+}
+.pagination-button.active {
+  background-color: #f87719;
+  color: white;
+}
+#search-btn {
+  cursor: pointer;
+}
+.catalog {
+  /* display: flex; */
+  /* flex-direction: column;  */
+  align-items: center;
+  justify-content: center;
+  margin-left: 35px;
+}
+/* .image-container img {
+  width: 280px;
+} */
+@media (min-width: 768px) {
+  /* .image-container img {
+    width: 280px;
+  } */
+  .search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+  }
+  .no-results {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    color: White;
+  }
+  .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #genre-select {
+    width: 204px;
+    height: 44px;
+  }
+  #search-btn {
+    width: 44px;
+    height: 44px;
+  }
+}
+/*PAGİNATİON BÖLÜMÜ*/
+@media (min-width: 1280px) {
+  .search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+  }
+  .catalog {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  #genre-select {
+    width: 204px;
+    height: 44px;
+  }
+  #search-btn {
+    width: 44px;
+    height: 44px;
+  }
+}

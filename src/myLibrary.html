@@ -4,25 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page 3</title>
+    <title>My Library</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/myLibrary.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
-    <load
-      src="./partials/header.html"
-      icon-path="./img/sprite.svg#logo"
-      highlight-curr="active"
-    />
-
-    <main>
-      <div class="container">
-        <h1 class="main-title">
-          <span class="main-title-gradient">Welcome</span> to page 3
-        </h1>
-        <load src="./partials/back-link.html" />
-      </div>
-    </main>
-
+    <button id="scrollToTopBtn" title="Scroll Up">
+      <img
+        src="../img/logo.svg"
+        loading="lazy"
+        alt="logo"
+        class="logo-img fas"
+      />
+    </button>
+    <load src="./partials/header.html" />
+    <load src="./partials/hero.html" />
+    <div class="my-library-catalog">
+      <select class="genreSelect">
+        <option value="">Genre</option>
+      </select>
+    </div>
+    <div class="library-catalog"></div>
+    <div class="loadMore">
+      <button class="loadMoreBtn">Load More</button>
+    </div>
     <load src="./partials/footer.html" />
+
+    <script type="module" src="./js/myLibrary.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
