@@ -1,0 +1,206 @@
+.library-header {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+}
+.library-header img {
+  width: 90%;
+}
+.genreSelect {
+  width: 173px;
+  height: 44px;
+  background-color: transparent;
+  border: 1px solid #FFC226;
+}
+.my-library-catalog {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.library-catalog {
+  margin-left: 30px;
+  gap: 16px;
+  margin-top: 16px;
+}
+.movie-card-library {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 16px;
+  border-radius: 5px;
+}
+.image-container {
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-container img {
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.movie-details-library {
+  width: 280px;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+.movie-name-library {
+  width: 280px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+}
+.movie-name-library h3 {
+  font-size: 12px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+.movie-name-library p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #B7B7B7;
+}
+.loadMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 106px;
+  height: 38px;
+  margin-left: 120px;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+.loadMoreBtn {
+  border-radius: 74px;
+  padding: 15px;
+  background: linear-gradient(#FFC226 9.4%, #F84119);
+}
+.stars {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 4px;
+  width: 14px;
+  height: 14px;
+}
+.checked {
+  color: #F87719;
+}
+/*ÇÖP KUTUSU*/
+.movie-card-library {
+  position: relative; /* Çöp kutusunu kartın üzerine konumlandırmak için */
+}
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: whitesmoke;
+  font-size: 20px;
+  transition: color 0.7s ease;
+}
+.delete-btn:hover {
+  color: #F87719;
+}
+.no-results-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  font-size: 24px;
+  color: #F87719;
+  font-weight: 400;
+  margin-top: 50px;
+}
+.genreSelect {
+  margin-left: 10px;
+  border: 1px solid #FFC226;
+}
+@media (min-width: 768px) {
+  .my-library-catalog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .library-catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-left: 70px;
+  }
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .loadMore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 173px;
+    height: 38px;
+    margin-left: 300px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
+  .loadMoreBtn {
+    width: 173px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 74px;
+    padding: 15px;
+    background: linear-gradient(#FFC226 9.4%, #F84119);
+  }
+  .genreSelect {
+    background-color: transparent;
+    border: 1px solid #FFC226;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .no-results-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    font-size: 24px;
+    color: #F87719;
+    font-weight: 400;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+/*PAGİNATİON BÖLÜMÜ*/
+@media (min-width: 1280px) {
+  .loadMore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 173px;
+    height: 38px;
+    margin-left: 670px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
+}
