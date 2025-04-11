@@ -1,0 +1,231 @@
+.upcomingContainer {
+    width: 100%;
+    /* min-width: ;
+  max-width: 320px; */
+    /* Görseldeki genişliğe yakın */
+    padding: 10px;
+}
+
+/* .upcoming-section {
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+} */
+.upcomingTitle {
+    margin-left: 22px;
+}
+
+.movie-container {
+    padding: 22px;
+}
+
+.upcoming-movie-card {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.upcoming-movie-poster {
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    /* Mobil uyumlu olması için */
+    /* max-width: 280px; */
+    /* height: auto; */
+}
+
+.movie-info {
+    /* text-align: left;
+    width: 100%;
+    font-family: Roboto;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%; */
+    /* color: #B7B7B7; */
+    margin-right: 57px;
+}
+
+.movie-info {
+    gap: 50px;
+}
+
+.movie-title {
+    /* margin: 0 0 10px 0;
+    font-weight: 700;
+    font-size: 1.1em; */
+    /* color: white; */
+    font-family: Roboto;
+    font-weight: 500 bold;
+    font-size: 20px;
+    line-height: 100%;
+    /* letter-spacing: 0%; */
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.release-date-value {
+    color: #F87719;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.vote-average {
+    background-color: white;
+    color: black;
+    margin-left: 44px;
+    border-radius: 5px;
+    padding-right: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    border-color: #FFFFFF;
+    font-size: 14px;
+}
+
+.vote-count {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    padding-top: 1px;
+    border-color: #FFFFFF;
+    font-size: 14px;
+}
+
+.popularity {
+    /* color: white; */
+    margin-left: 50px;
+}
+
+.genre {
+    /* color: white; */
+    margin-left: 80px;
+}
+
+.about {
+    margin-top: 20px;
+}
+
+.movie-overview {
+    /* color: white; */
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.add-to-library {
+    background: linear-gradient(to right, #FFC226, #F84119);
+    color: #111111;
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 74px;
+    margin-top: 15px;
+    cursor: pointer;
+    width: 155px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.add-to-library:hover {
+    background-color: #FFC107;
+}
+
+/* Loader stili (isteğe bağlı) */
+.loader {
+    border: 4px solid #F3F3F3;
+    border-top: 4px solid #3498DB;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+    display: none;
+    /* Varsayılan olarak gizli */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*TABLET*/
+@media (min-width: 768px) {
+    .upcomingContainer {
+        width: auto;
+        height: auto;
+    }
+
+    /* movie-poster ve movie-card a müdahale ettiğim zaman Nur un ki kayıyor */
+    .upcoming-movie-poster {
+        width: 704px;
+        height: 400px;
+    }
+
+    .upcoming-movie-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .release-vote-popular-genre {
+        display: flex;
+        flex-direction: row;
+        gap: 131px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .upcomingContainer {
+        width: 1211px;
+        height: 519px;
+        margin-left: 100px;
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* padding-left: 5px; */
+    }
+
+    .upcoming-section {
+        margin-bottom: 200px;
+    }
+
+    .upcoming-movie-card {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        /* padding-left: 5px; */
+    }
+
+    .upcoming-movie-poster {
+        min-width: 805px;
+        height: 458px;
+    }
+
+    .release-vote-popular-genre {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .movie-info {
+        height: 458px;
+        width: 390px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .movie-overview {
+        font-size: 14px;
+    }
+}
