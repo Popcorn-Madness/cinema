@@ -2,27 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page 2</title>
+    <title>Catalog</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/catalog.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="moviePopup.css" /> -->
   </head>
   <body>
-    <load
-      src="./partials/header.html"
-      icon-path="./img/sprite.svg#logo"
-      highlight-act="active"
-    />
-
-    <main>
-      <div class="container">
-        <h1 class="main-title">
-          <span class="main-title-gradient">Welcome</span> to page 2
-        </h1>
-        <load src="./partials/back-link.html" />
-      </div>
-    </main>
-
+    <button id="scrollToTopBtn" title="Scroll Up">
+      <img
+        src="../img/logo.svg"
+        loading="lazy"
+        alt="logo"
+        class="logo-img fas"
+      />
+    </button>
+    <load src="./partials/header.html" />
+    <load src="./partials/hero.html" />
+    <div class="search-container">
+      <input type="text" id="genre-select" placeholder="Search" />
+      <select id="year-select">
+        <option value="">Year</option>
+      </select>
+      <img id="search-btn" src="./img/Icon button.svg" alt="Ara button" />
+    </div>
+    <div id="movie-list" class="movies"></div>
+    <div class="catalog"></div>
+    <div class="pagination"></div>
     <load src="./partials/footer.html" />
+    <script type="module" src="./main.js"></script>
+
+    <script type="module" src="./js/moviePopUp.js"></script>
+    <script type="module" src="./js/header.js"></script>
+    <script type="module" src="./js/catalog.js"></script>
   </body>
 </html>
