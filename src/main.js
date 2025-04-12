@@ -4,5 +4,7 @@ import { catalogFun } from "./js/catalog.js";
 catalogFun();
 import { footer } from "./js/footer.js";
 footer();
-import{ upComing } from "./js/upComing.js";
+import { upComing } from "./js/upComing.js";
 upComing();
+import { hero } from "./js/hero.js";
+hero();
